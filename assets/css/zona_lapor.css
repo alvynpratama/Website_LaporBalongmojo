@@ -1,0 +1,288 @@
+/*------------ Card Guide ------------*/
+.card-guide {
+  display: none !important;
+}
+
+@media (min-width: 1200px) {
+  .card-guide {
+    display: inline-block !important;
+  }
+}
+
+/*------------ Card Guide ------------*/
+
+/*------------ scrollbar ------------*/
+::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F9FA !important;
+}
+
+::-webkit-scrollbar-thumb {
+  /* Diubah ke Hijau Logo */
+  background: #3A7D44 !important;
+  border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* Diubah ke Hijau Tua */
+  background: #2E6436 !important;
+}
+
+/*------------ scrollbar ------------*/
+
+/*------------ Sticky Footer ------------*/
+main>.container {
+  padding: 60px 15px 0;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+
+.footer>.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*------------ Sticky Footer ------------*/
+
+/*------------ header ------------*/
+.header-title {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.header-button {
+  margin: 5px 0;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .header-title {
+    margin: 5px 0;
+    text-align: left;
+  }
+
+  .header-button {
+    margin: 5px 0;
+    text-align: right;
+  }
+}
+
+/*------------ header ------------*/
+
+/*------------ img-size ------------*/
+.h-500 {
+  height: 32rem !important;
+}
+
+@media (max-width: 576px) {
+  .h-500 {
+    height: 16rem !important;
+  }
+}
+
+.img-w-100-hm-100 {
+  max-height: 100px !important;
+  width: 100px !important;
+}
+
+.img-w-75-hm-100 {
+  max-height: 100px !important;
+  width: 75px !important;
+}
+
+.img-w-50 {
+  width: 50px !important;
+}
+
+.img-w-75 {
+  width: 75px !important;
+}
+
+.img-w-100 {
+  width: 100px !important;
+}
+
+.img-w-150 {
+  width: 150px !important;
+}
+
+.img-w-200 {
+  width: 200px !important;
+}
+
+.img-w-250 {
+  width: 250px !important;
+}
+
+.img-w-300 {
+  width: 300px !important;
+}
+
+.img-hm-200 {
+  max-height: 200px !important;
+}
+
+/*------------ img-size ------------*/
+
+/*------------ scroll to top ------------*/
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  text-align: center;
+  color: #fff;
+  /* Diubah ke Hijau Logo */
+  background: #3A7D44;
+  line-height: 46px;
+}
+
+.scroll-to-top:focus {
+  /* Diubah ke Hijau Tua */
+  background-color: #2E6436;
+  color: white;
+}
+
+.scroll-to-top:hover {
+  /* Diubah ke Hijau Tua */
+  background-color: #2E6436;
+  color: white;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+/*------------ scroll to top ------------*/
+
+/*------------ textarea ------------*/
+textarea {
+  min-height: 90px;
+  max-height: 210px;
+}
+
+/*------------ textarea ------------*/
+
+/*------------ footer ------------*/
+.footer-copyright {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.footer-sosial-media {
+  margin: 10px 0;
+  text-align: left;
+}
+
+@media (min-width: 992px) {
+  .footer-copyright {
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  .footer-sosial-media {
+    margin: 10px 0;
+    text-align: right;
+  }
+}
+
+/*------------ footer ------------*/
+
+/*------------ btn login ------------*/
+.btn-login {
+  background: transparent !important;
+  /* Diubah ke Hijau Logo */
+  border: 1px solid #3A7D44;
+  color: #343a40 !important;
+}
+
+.btn-login:hover {
+  /* Diubah ke Hijau Logo */
+  background: #3A7D44 !important;
+  color: white !important;
+}
+
+.btn-login:focus {
+  color: #fff !important;
+  /* Diubah ke Hijau Tua */
+  background-color: #2E6436 !important;
+  border-color: #2E6436 !important;
+  /* Bayangan disesuaikan ke Hijau */
+  box-shadow: 0 0 0 0.2rem rgba(58, 125, 68, 0.5) !important;
+}
+
+/*------------ btn login ------------*/
+
+/* ========================================= */
+/* === [BARU] ATURAN UNTUK .btn-danger === */
+/* ========================================= */
+.btn-danger {
+  background-color: #3A7D44 !important;
+  border-color: #3A7D44 !important;
+}
+
+.btn-danger:hover {
+  background-color: #2E6436 !important;
+  border-color: #2E6436 !important;
+}
+
+.btn-danger:focus,
+.btn-danger.focus {
+  background-color: #2E6436 !important;
+  border-color: #2E6436 !important;
+  box-shadow: 0 0 0 0.2rem rgba(58, 125, 68, 0.5) !important;
+}
+
+/* ======================================================= */
+/* === PERBAIKAN RESPONSIVE (TAMPILAN HP/TABLET) TAMBAHAN === */
+/* ======================================================= */
+@media (max-width: 991.98px) {
+
+  /*    * Ini akan membuat form saran & peta (yang pakai .col-lg-6) 
+   * jadi 100% lebarnya dan tersusun ke bawah.
+   */
+  .col-lg-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+    /* Menambah jarak bawah antara form & peta */
+  }
+
+  /*    * Ini akan memaksa peta (iframe) di dalamnya
+   * agar lebarnya 100% (tidak 512px lagi)
+   */
+  .col-lg-6 iframe {
+    width: 100% !important;
+    /* Paksa lebar jadi 100% */
+    height: 350px;
+  }
+}
+
+/* <-- KESALAHANNYA DI SINI, KODE TABEL KELUAR DARI SINI */
+
+/* ========================================= */
+/* === [DIPINDAHKAN] Mengubah Warna Header Tabel === */
+/* ========================================= */
+
+/* Ini menargetkan ID tabel secara spesifik */
+table#table_id.table-bordered .thead-dark th {
+  background-color: #3A7D44 !important;
+  border-color: #2E6436 !important;
+  color: #ffffff !important;
+  /* Memaksa teks jadi putih */
+}
+
+/* Ini untuk jaga-jaga jika ada style lain */
+.table .thead-dark th {
+  background-color: #3A7D44 !important;
+  border-color: #2E6436 !important;
+  color: #ffffff !important;
+}
