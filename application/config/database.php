@@ -78,7 +78,7 @@ $db['default'] = array(
 	
 	'hostname' => 'db-lapor-balongmojo.mysql.database.azure.com', 
 	
-	'username' => 'alvynadmin', 
+	'username' => 'adminalvyn', 
 	
 	'password' => 'Surabaya05!', 
 	
