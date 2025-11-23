@@ -75,10 +75,15 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'zona_lapor',
+	
+	'hostname' => 'db-lapor-balongmojo.mysql.database.azure.com', 
+	
+	'username' => 'adminalvyn', 
+	
+	'password' => 'Surabaya05!', 
+	
+	'database' => 'zona_lapor', 
+	
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -88,7 +93,9 @@ $db['default'] = array(
 	'char_set' => 'utf8',
 	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
-	'encrypt' => FALSE,
+	
+	'encrypt' => array('ssl_verify' => TRUE), 
+	
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),
