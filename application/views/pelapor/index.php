@@ -120,9 +120,16 @@
                                 </td>
                                 <td class="align-middle"><?= $dp['username']; ?></td>
                                 <td class="align-middle"><button type="button" class="btn text-center btn-sm btn-secondary"><i class="fas fa-fw fa-times"></i> Belum ditanggapi</button></td>
+                                
                                 <td class="align-middle text-center">
                                     <a href="<?= base_url('tanggapan/index/' . $dp['id_pengaduan']); ?>" class="btn btn-sm btn-info m-1"><i class="fas fa-fw fa-reply"></i></a>
+                                    
+                                    <?php if ($dp['status_pengaduan'] == 'Belum ditanggapi') : ?>
+                                        <a href="<?= base_url('pelapor/editPengaduan/' . $dp['id_pengaduan']); ?>" class="btn btn-sm btn-warning m-1" title="Ubah"><i class="fas fa-fw fa-edit text-white"></i></a>
+                                        <a href="<?= base_url('pelapor/hapusPengaduan/' . $dp['id_pengaduan']); ?>" class="btn btn-sm btn-danger m-1" title="Hapus" onclick="return confirm('Yakin ingin menghapus?');"><i class="fas fa-fw fa-trash"></i></a>
+                                    <?php endif; ?>
                                 </td>
+
                             </tr>
                         <?php endforeach ?>
                     </tbody>
