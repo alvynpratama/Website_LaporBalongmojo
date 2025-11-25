@@ -31,6 +31,7 @@
 
                     <div class="form-group text-right">
                         <a href="<?= base_url('pelapor'); ?>" class="btn btn-secondary">Batal</a>
+                        <a href="<?= base_url('pelapor/hapusPengaduan/' . $pengaduan['id_pengaduan']); ?>" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus?');">Hapus Laporan</a>
                         <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
                     </div>
 
