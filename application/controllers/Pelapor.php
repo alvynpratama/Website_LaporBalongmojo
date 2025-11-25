@@ -17,12 +17,12 @@ class Pelapor extends CI_Controller
 		$data['dataUser'] = $this->pelmo->getDataUser();
 		$id_masyarakat = $data['dataUser']['id_masyarakat'];
 
-		$data['pengaduan_belum_ditanggapi_pelapor'] = $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('Belum ditanggapi', $id_masyarakat);
-		$data['pengaduan_proses_pelapor']           = $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('Proses', $id_masyarakat);
-		$data['pengaduan_valid_pelapor']            = $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('Valid', $id_masyarakat);
-		$data['pengaduan_pengerjaan_pelapor']       = $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('Pengerjaan', $id_masyarakat);
-		$data['pengaduan_selesai_pelapor']          = $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('Selesai', $id_masyarakat);
-		$data['pengaduan_tolak_pelapor']            = $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('Ditolak', $id_masyarakat);
+		$data['pengaduan_belum_ditanggapi_pelapor'] = $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('belum_ditanggapi', $id_masyarakat);
+		$data['pengaduan_proses_pelapor']           = $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('proses', $id_masyarakat);
+		$data['pengaduan_valid_pelapor']            = $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('valid', $id_masyarakat);
+		$data['pengaduan_pengerjaan_pelapor']       = $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('pengerjaan', $id_masyarakat);
+		$data['pengaduan_selesai_pelapor']          = $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('selesai', $id_masyarakat);
+		$data['pengaduan_tolak_pelapor']            = $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('tidak_valid', $id_masyarakat);
 
 		$data['title'] = 'Dasbor';
 		$this->load->view('templates/header-pelapor', $data);
