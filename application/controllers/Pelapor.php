@@ -8,7 +8,7 @@ class Pelapor extends CI_Controller
 		parent::__construct();
 		$this->load->model('Pelapor_model', 'pelmo');
 		$this->load->model('PelaporPengaduan_model', 'pepemo');
-		$this->load->library('form_validation'); 
+		$this->load->library('form_validation');
 	}
 
 	public function index()
@@ -29,7 +29,6 @@ class Pelapor extends CI_Controller
 		$this->load->view('pelapor/index', $data);
 		$this->load->view('templates/footer-pelapor', $data);
 	}
-
 
 	public function hapusPengaduan($id_pengaduan)
 	{
@@ -82,7 +81,6 @@ class Pelapor extends CI_Controller
 			redirect('pelapor');
 		}
 	}
-
 
 	public function profile()
 	{
