@@ -124,7 +124,7 @@
                                 <td class="align-middle text-center">
                                     <a href="<?= base_url('tanggapan/index/' . $dp['id_pengaduan']); ?>" class="btn btn-sm btn-info m-1"><i class="fas fa-fw fa-reply"></i></a>
                                     
-                                    <?php if ($dp['status_pengaduan'] == 'Belum ditanggapi') : ?>
+                                    <?php if ($dp['status_pengaduan'] == 'belum_ditanggapi') : ?>
                                         <a href="<?= base_url('pelapor/editPengaduan/' . $dp['id_pengaduan']); ?>" class="btn btn-sm btn-warning m-1" title="Ubah"><i class="fas fa-fw fa-edit text-white"></i></a>
                                         <a href="<?= base_url('pelapor/hapusPengaduan/' . $dp['id_pengaduan']); ?>" class="btn btn-sm btn-danger m-1" title="Hapus" onclick="return confirm('Yakin ingin menghapus?');"><i class="fas fa-fw fa-trash"></i></a>
                                     <?php endif; ?>
